@@ -1,0 +1,108 @@
+/* General */
+.right
+{
+    float: right;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #fff;
+    color: #4d4d4d;
+    font-family: 'Arial', serif;
+    font-size:  14px;
+}
+
+/* Connexion box */
+.box 
+{
+    width: 40%;
+    max-width: 300px;
+    padding: 30px;
+    background: gainsboro;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.7);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box .header 
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Form */
+input[type='password'],
+input[type='text'],
+input[type='email'] 
+{
+    width: 86%;
+    border-radius:4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 2px 4px;
+    margin: 6px;
+}
+
+/* Connexion button */
+.primaryAction 
+{
+    color: #fff;
+    font-size: 13px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: rgb(102, 140, 94);
+    background-image: -moz-linear-gradient(top, rgb(158, 194, 142), rgb(104, 143, 96));
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#9ec28e),to(#688f60));
+    background-image: -webkit-linear-gradient(top, #9ec28e, #688f60);
+    background-image: -o-linear-gradient(top, #9ec28e, #688f60);
+    background-image: linear-gradient(to bottom, #9ec28e, #688f60);
+    background-repeat: repeat-x;
+    border-color: #5f8657;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 3px 18px 5px 18px;
+}
+
+.primaryAction:hover,
+.primaryAction.active 
+{
+    box-shadow: 1px 1px 9px rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
+/* Remember me button and reset password link */
+.remember-forgot-section 
+{
+    width: 94%;
+    text-align: left;
+    margin: 8px auto;
+    font-size: 10px;
+}
+
+.secondaryAction 
+{
+    float: right;
+    margin-top: 2px;
+}
+
+/* Google button */
+.googleButton {
+    background: url('/static/images/fb_200.png') no-repeat center top;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.7);
+    border-radius: 5px;
+    width: 198px;
+    height: 37px;
+    margin: auto;
+    margin-top: 18%;
+    z-index: 10;
+    overflow: hidden;
+}

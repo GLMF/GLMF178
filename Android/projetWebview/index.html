@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Hello world Webview</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" id="viewport"
+            content="width=device-width, target-densitydpi=device-dpi,
+            initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+    </head>
+
+    <style>
+        body 
+        { 
+            background-color: #eee; 
+            font-size: 32px;
+        }
+    </style>
+
+    <script>
+        var droid = new Android();
+
+        function transferer(saisie)
+        {
+            droid.eventPost('donnee', saisie);
+        };
+    </script>
+ 
+    <body>
+        <h1>Hello World Webview</h1>
+        Quel est votre nom ? <br />
+        <input id="nom" type="text" autofocus 
+            onblur="transferer(this.value)" />
+
+        <button id="quit" type="button" 
+            onclick="droid.dismiss()">Quitter</button>
+    </body>
+</html>

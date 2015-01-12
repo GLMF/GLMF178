@@ -1,0 +1,18 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="fr">
+    <head>
+        <title>GLMF Authorisation</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" />
+    </head>
+    <body>
+        {% if request.user.is_authenticated %}
+            <a href="/accounts/logout" class="right">Déconnexion</a>
+            <h1>Bienvenue {{ request.user.username }}</h1>
+        {% else %}
+            <a href="/accounts/login" class="right">Connexion</a>
+            <h1>Vous n'êtes pas connecté !</h1>
+        {% endif %}
+    </body>
+</html>
